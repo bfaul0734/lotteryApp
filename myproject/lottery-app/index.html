@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ethereum Lottery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header style="position: relative; top: -20px;">
+        <div class="header-content">
+          <h1>ETHEREUM LOTTERY</h1>
+          <button id="enable-button">Enable MetaMask</button>
+        </div>
+      </header>
+
+  <section class="section1">
+    <p>Manager: <span id="managerAddress"></span></p>
+    <p>Number of Players: <span id="numPlayers"></span></p>
+    <p>Current Prize Pool: <span id="prize-pool"></span></p>
+    <div class="button-container" id="buttonContainer">
+        <button class="ooga" id="enter-button" onclick="enterLottery()">Enter Lottery</button>
+        <button class="ooga" id="pick-winner-button" onclick="pickWinner()">Pick Winner</button>
+      </div>
+  </section>
+  <section class="section2">
+    <h2 class="ooga">Players</h2>
+    <ul  class="ooga" id="playersList"></ul>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.3.6/dist/web3.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
